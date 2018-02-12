@@ -1,0 +1,52 @@
+#flats {
+  h1 {
+    color: $dgreen;
+  }
+}
+
+h4 {
+  color: black;
+}
+
+.container {
+color: $dgreen;
+font-size: 14px;
+}
+.banner {
+  margin-bottom: 30px;
+}
+
+.flat-details {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  padding-left: 0;
+  h4 {
+    color: #333333;
+    font-size: 20px;
+  }
+  p {
+    color: #777777;
+    font-size: 14px;
+  }
+}
+
+.flat-owner {
+  padding: 20px;
+  text-align: center;
+  p {
+    font-size: 14px;
+    margin-top: 0;
+  }
+}
+
+.flat_name {
+  display: block;
+}
+
+.flat-form {
+  color: #F4F4F4;
+}
+li {
+  color: $green;
+}
