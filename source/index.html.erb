@@ -4,10 +4,28 @@ title: Le Wagon - Middleman
 
 <div id="home">
   <div class="home-content">
-    <%= image_tag "logo.png", width: "200" %>
-    <p>
-      Middleman is now running!
-    </p>
+    <%= partial "layouts/banner" %>
+
+    <div class="container">
+      <h1>Recent flats</h1>
+      <div class="row">
+        <% data.cities.each do |city| %>
+          <div class="col-xs-12 col-md-4">
+            <div class="card" style="background-image: url(https://cache-graphicslib.viator.com/graphicslib/thumbs360x240/2050/SITours/eiffel-tower-dinner-and-seine-river-cruise-in-paris-459739.jpg);">
+              <div class="card-category">
+                <h2><%= city.name %></h2>
+              </div>
+              <img src='https://kitt.lewagon.com/placeholder/users/ssaunier' class="avatar card-user"/>
+              <div class="card-description">
+                <h2><%= city.owner %></h2>
+                <p><%= city.description %></p>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+
     <p class="about">
       <%= link_to "More about this template", "about.html" %>
     </p>
